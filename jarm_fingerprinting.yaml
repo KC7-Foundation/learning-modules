@@ -29,19 +29,29 @@ $ sudo apt install python3-venv
 ### Step 2: Set up your virtual environment and install the required Python packages
 Navigate to where you want to save your Python environment and Jupyter notebook. In this case, I’m going to use my Desktop folder.
 
+```bash
 $ cd ~/Desktop
 $ mkdir kc7-projects
 $ cd kc7-projects/
+```
+
 Now let’s set up our Python 3 virtual environment and activate it:
 
+```bash
 $ python3 -m venv jarm
 $ cd jarm
 $ source bin/activate
+```
+
 You should see “(jarm)” displayed on your terminal on the left side:
 
+```bash
 (jarm) kc7cyber@kc7cyber-dev:~/Desktop/kc7-projects/jarm$
+```
+
 Now let’s clone the git repository:
 
+```bash
 $ git clone https://github.com/salesforce/jarm.git
 Cloning into 'jarm'...
 remote: Enumerating objects: 102, done.
@@ -50,29 +60,40 @@ remote: Compressing objects: 100% (23/23), done.
 remote: Total 102 (delta 53), reused 39 (delta 39), pack-reused 40
 Receiving objects: 100% (102/102), 38.17 KiB | 2.73 MiB/s, done.
 Resolving deltas: 100% (54/54), done.
+```
+
 Let’s install the required modules:
 
 Note: you will need to edit the requirements.txt and set requests version from 2.26.0 to 2.28.0.
+
+```bash
 $ cd jarm/
 $ pip3 install -r requirements.txt
-⌨️ JARM Fingerprint Generation
+```
+
+### ⌨️ JARM Fingerprint Generation
 ⚠️ DISCLAIMER ⚠️
+
 This content contains the use of a tool that will connect directly to targeted infrastructure, and as such must be treated with caution.
 
 Proceed at your own risk and with caution. This is meant for an advanced threat intelligence audience. If you’re investigating malicious infrastructure, it is highly recommend you use a VPN or Tor connection when generating a JARM fingerprint.
 
 With our environment set up, let’s test creating a jarm.py fingerprint on https://www.kc7cyber.com, a website we know and love:
 
+```bash
 $ python3 jarm.py www.kc7cyber.com
 Domain: www.kc7cyber.com
 Resolved IP: 34.149.120.3
 JARM: 3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa
+```
+
 At the time of this guide the JARM fingerprint is 3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa. It’s important to note that this may be different when you do this, because TLS configurations and application versions change over time.
 
 Now that we know it works, we’ll keep this JARM fingerprint handy for when we search them using Censys and Shodan.
 
 Let’s generate a couple more for different, safe websites:
 
+```bash
 $ python3 jarm.py www.yahoo.com
 Domain: www.yahoo.com
 Resolved IP: 98.137.11.164
@@ -90,8 +111,9 @@ Domain: www.tryhackme.com
 Resolved IP: 172.67.27.10
 JARM: 27d3ed3ed0003ed1dc42d43d00041d6183ff1bfae51ebd88d70384363d525c
 Alright, we’ve generated a few JARM fingerprints. Let’s go search them on Censys.io!
+```
 
-📀Censys.io JARM Searching
+### 📀Censys.io JARM Searching
 Let’s start with Censys.
 
 If you don’t have an account, visit https://accounts.censys.io/register to sign up for a Censys.io account. You will need to use a valid email account to sign up and verify with. If you’re a student, feel free to put ‘Student’ or your college as your organization.
@@ -110,10 +132,10 @@ I’ll leave the other JARM fingerprints we’ve generated for you to play aroun
 
 Other well known C2 JARM fingerprints can be found here: https://github.com/cedowens/C2-JARM. Some are outdated, so you may need to find a C2 framework (either commercial or custom to your threat actor) and generate your own JARM fingerprint to pivot on. For the purposes of this guide, we won’t be investigating any specific malicious infrastructure.
 
-🐦 Shodan.io JARM Searching
+### 🐦 Shodan.io JARM Searching
 Shodan has a similar functionality to Censys’ JARM fingerprint search, except you run with the query:
 
-ssl.jarm:<fingerprint-here>
+`ssl.jarm:<fingerprint-here>`
 to search for hosts. The only downside is that it requires a membership to query on Shodan.
 
 
