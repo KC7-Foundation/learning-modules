@@ -87,7 +87,7 @@ Resolved IP: 34.149.120.3
 JARM: 3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa
 ```
 
-At the time of this guide the JARM fingerprint is 3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa. It’s important to note that this may be different when you do this, because TLS configurations and application versions change over time.
+At the time of this guide the JARM fingerprint is `3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa`. It’s important to note that this may be different when you do this, because TLS configurations and application versions change over time.
 
 Now that we know it works, we’ll keep this JARM fingerprint handy for when we search them using Censys and Shodan.
 
@@ -116,11 +116,11 @@ Alright, we’ve generated a few JARM fingerprints. Let’s go search them on Ce
 ### 📀Censys.io JARM Searching
 Let’s start with Censys.
 
-If you don’t have an account, visit https://accounts.censys.io/register to sign up for a Censys.io account. You will need to use a valid email account to sign up and verify with. If you’re a student, feel free to put ‘Student’ or your college as your organization.
+If you don’t have an account, visit `https://accounts.censys.io/register` to sign up for a Censys.io account. You will need to use a valid email account to sign up and verify with. If you’re a student, feel free to put ‘Student’ or your college as your organization.
 
-Once you’ve signed up and verified your email, log in to your account and head over to Censys Search at https://search.censys.io/ and sign in.
+Once you’ve signed up and verified your email, log in to your account and head over to Censys Search at `https://search.censys.io/` and sign in.
 
-Let’s start with the kc7cyber JARM fingerprint: 3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa. You can use the parameter “services.jarm.fingerprint:” to search for JARM fingerprints.
+Let’s start with the kc7cyber JARM fingerprint: `3fd3fd07d3fd3fd00042d42d0000008fe5654c9239cdb4052d3ab65a579afa`. You can use the parameter “services.jarm.fingerprint:” to search for JARM fingerprints.
 
 
 There’s quite a bit of results! There’s a reason why. It’s because the way the website is set up is similar to many websites. We’ll leave that as a mystery as to why that is :).
@@ -133,15 +133,17 @@ I’ll leave the other JARM fingerprints we’ve generated for you to play aroun
 Other well known C2 JARM fingerprints can be found here: https://github.com/cedowens/C2-JARM. Some are outdated, so you may need to find a C2 framework (either commercial or custom to your threat actor) and generate your own JARM fingerprint to pivot on. For the purposes of this guide, we won’t be investigating any specific malicious infrastructure.
 
 ### 🐦 Shodan.io JARM Searching
+
 Shodan has a similar functionality to Censys’ JARM fingerprint search, except you run with the query:
 
 `ssl.jarm:<fingerprint-here>`
 to search for hosts. The only downside is that it requires a membership to query on Shodan.
 
 
-🎉🎉 Hooray! 🎉🎉
+### 🎉🎉 Hooray! 🎉🎉
+
 We’ve touched upon how to generate your own fingerprint using JARM, and how to search for it on Censys and Shodan. There’s quite a bit of opportunities to pivot on JARM fingerprints to newly created infrastructure. Some things to keep in mind when filtering for false positives and finding new C2 domains:
 
-Look for low hanging fruit first, such as servers hosted at common VPS hosting providers.
+Look for low-hanging fruit first, such as servers hosted at common VPS hosting providers.
 Look for weirdly named or self-signed SSL certificates.
 Investigate other open ports on the server, as it may give you additional clues to find the threat actor.
