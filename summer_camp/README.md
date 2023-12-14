@@ -93,6 +93,7 @@ Next, students were introduced to KQL operators using physical, color-coded card
 <img width="952" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/f4aa234f-90b2-486e-a5b6-2033a8e40896">
 
 <img width="855" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/8219da50-076e-44ea-b55e-adbae0eac6b7">
+
 *Source: Students using flash cards to craft queries in KQL.*
 
 Once they had gained familiarity with KQL syntax and the operators that could be used in the language, we transitioned students from building cards on the table to writing KQL queries in Azure Data Explorer (ADX), Microsoft’s cloud-based data analytics platform.
