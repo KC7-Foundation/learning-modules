@@ -37,6 +37,7 @@ After just five days of camp, the students learned to use Kusto Query Language (
 ### Our Approach
 
 We started with a focus on using data to make analytical assessments
+
 <img width="437" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/05d4e8d9-d7cd-4889-97b8-524cf07d0cbc">
 
 *Source: students investigate a museum heist by interviewing several museum staff.*
