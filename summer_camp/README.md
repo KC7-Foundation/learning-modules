@@ -27,6 +27,7 @@ We accomplished this by (1) redefining cybersecurity “fundamentals” not as d
 In June of 2023, the KC7 Foundation held a week-long Cyber Summer Camp in partnership with Fayette County Public Schools (FCPS) in Lexington, Kentucky. The summer camp consisted of 4th to 7th grade students, primarily from underserved and underrepresented communities. This camp was provided free of charge to students and their families, with the intention of reaching students who may never otherwise get exposure to the cybersecurity industry. Consequently, most of the student participants had never been exposed to computer science or cybersecurity concepts before.
 
 <img width="479" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/bab1efd0-5df4-4001-a2e9-e3f462aaad78">
+
 *Source: Youtube (https://www.youtube.com/watch?v=H-lKiHsctTQ) – FOX56 News*
 
 > “At first I didn’t want to be here and now I’m enjoying the camp. [They’re] teaching a whole bunch of things, things I’ve never heard [of], things I’ve never learned..” (Camp participant, 7th grade)
@@ -37,8 +38,8 @@ After just five days of camp, the students learned to use Kusto Query Language (
 
 We started with a focus on using data to make analytical assessments
 <img width="437" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/05d4e8d9-d7cd-4889-97b8-524cf07d0cbc">
-*Source: students investigate a museum heist by interviewing several museum staff.
-*
+
+*Source: students investigate a museum heist by interviewing several museum staff.*
 
 Every day at Cyber Summer Camp, the KC7 team had campers recite the three key tenants of a good cybersecurity analyst:
 
