@@ -26,11 +26,19 @@ We accomplished this by (1) redefining cybersecurity “fundamentals” not as d
 
 In June of 2023, the KC7 Foundation held a week-long Cyber Summer Camp in partnership with Fayette County Public Schools (FCPS) in Lexington, Kentucky. The summer camp consisted of 4th to 7th grade students, primarily from underserved and underrepresented communities. This camp was provided free of charge to students and their families, with the intention of reaching students who may never otherwise get exposure to the cybersecurity industry. Consequently, most of the student participants had never been exposed to computer science or cybersecurity concepts before.
 
+<img width="479" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/bab1efd0-5df4-4001-a2e9-e3f462aaad78">
+*Source: Youtube (https://www.youtube.com/watch?v=H-lKiHsctTQ) – FOX56 News*
+
+> “At first I didn’t want to be here and now I’m enjoying the camp. [They’re] teaching a whole bunch of things, things I’ve never heard [of], things I’ve never learned..” (Camp participant, 7th grade)
+
 After just five days of camp, the students learned to use Kusto Query Language (KQL) and Azure Data Explorer (ADX) to analyze various types of log data, investigate simulated computer intrusions, and formulate and present assessments of what occurred. All the while, they developed investigative and critical thinking skills by asking good questions, paying attention to details, and linking threat indicators across various mediums of data, like news articles, social media posts and business records. Further, they used the data they analyzed to perform attribution of threat actors to (fictitious) people, an opportunity that even most cybersecurity professionals never have.
 
 ### Our Approach
 
 We started with a focus on using data to make analytical assessments
+<img width="437" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/05d4e8d9-d7cd-4889-97b8-524cf07d0cbc">
+*Source: students investigate a museum heist by interviewing several museum staff.
+*
 
 Every day at Cyber Summer Camp, the KC7 team had campers recite the three key tenants of a good cybersecurity analyst:
 
@@ -39,7 +47,8 @@ Every day at Cyber Summer Camp, the KC7 team had campers recite the three key te
 3. Be good with data
 	
 Students started their week with an investigation into a fictional museum heist. The key to solving the mystery lay with the museum staff (witnesses), each possessing valuable information that, when combined, would unveil the complete picture of the heist. The campers had to ask witnesses targeted questions to get clues that could help them solve the mystery.
-At the beginning of the exercise, students were asking broad, undirected questions like:
+
+At the beginning of the exercise, students asked broad, undirected questions like:
 
  - “Did you see who stole the amulet?” 
  - “Who is the thief?”
@@ -65,7 +74,12 @@ The goal, ultimately, was to teach students how to use Kusto Query Language (KQL
 
 We began with a simple data table that presented some information about a few people. We asked students basic questions about the data, like “Who is 15 years old?”
 
+<img width="960" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/9aee6f86-f951-4afb-9314-7c78aa8c2a05">
+
 Once they were comfortable answering questions by looking at columns and rows, we asked them to think about the questions we were asking them in a different way.
+
+
+<img width="793" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/3f997f29-228e-4f47-97e2-147ea67994b7">
 
 Students took the questions we asked them, and broke them down into a few parts:
 - What don’t we know?
@@ -73,6 +87,11 @@ Students took the questions we asked them, and broke them down into a few parts:
 - Where do we need to look to find the answer?
 
 Next, students were introduced to KQL operators using physical, color-coded cards. They used these cards to convert our questions into a corresponding KQL query equivalent.
+
+<img width="952" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/f4aa234f-90b2-486e-a5b6-2033a8e40896">
+
+<img width="855" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/8219da50-076e-44ea-b55e-adbae0eac6b7">
+*Source: Students using flash cards to craft queries in KQL.*
 
 Once they had gained familiarity with KQL syntax and the operators that could be used in the language, we transitioned students from building cards on the table to writing KQL queries in Azure Data Explorer (ADX), Microsoft’s cloud-based data analytics platform.
 
@@ -91,10 +110,20 @@ With an understanding of how to ask good questions, how to use multiple sources 
 
 **Real-world example (1):** Below is an example of a student (a 6th grader) summary of how she would attribute the phishing attack that targeted the Spider Society. Note that the student correlates multiple sources of data, and “pivots” on indicators to discover new sources of evidence during the attribution process.
 
+<img width="1189" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/b843adda-5163-4c76-b12d-35456b18a749">
+
 **Real-world example (2):** Here’s another example of how students applied what they learned to investigate the final challenge intrusion, a ransomware attack against a video game development company:
 
+<img width="857" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/3bbccd95-7dd7-4564-9b22-016150a5a027">
+*Source: Students analyzed data including text files, social media posts, and data derived from tables in ADX using KQL to answer questions in a summary sheet.*
 
 Students used multiple investigative techniques to generate leads on their case. They questioned witnesses to solicit information that could then be used to find indications of compromise within the compromised environment. Working together, they were able to create a timeline of the intrusion and attribute it to the threat actors responsible.
+
+<img width="1016" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/554eb6cb-f3a2-4518-9ebc-8fae50edee44">
+*Source: Students used KQL and ADX to extract evidence from data and answered questions pertaining to the timeline and victims.*
+
+<img width="725" alt="Screenshot 2023-12-14 at 5 14 53 PM" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/66e86342-c344-496a-a2c1-9bac04c480fb">
+*Source: Students created visuals like this poster to help present their technical findings to a wider audience.*
 
 ### Outcomes
 
@@ -109,13 +138,18 @@ All 35 students finished the camp with a set of new skills and abilities. They l
 
 But most importantly, over the course of the week, students grew excited about cybersecurity, and about learning in general. They came in each day more excited to get started than they were the day before. They each experienced success and felt empowered to continue learning and to share what they had learned with their peers.
 
+> “…I feel smart in something that I didn’t know [before].” 
+
+<img width="507" alt="image" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/412ae1ae-13b9-482e-b2dd-c0e285c80468">
+
+
 Some of the FCPS Educators mentioned that many of these students would be overlooked if teachers exclusively provided opportunities based on students’ reading levels. The Cyber Summer Camp helped students identify critical abilities and skills. It also provided them with the opportunity to learn about a career pathway they can start pursuing immediately.  
 
 __If we had 4th graders excited about and capable of investigating, attributing, and reporting on intrusions in just five days, then how are we facing a shortage of 3.5 million cybersecurity professionals in the next two years? The problem lies in the way we’ve always taught cybersecurity.__
 
 ### Our Philosophy
 
-Traditional cybersecurity training is flawed, especially formal cybersecurity education that takes place in K-12 and post-secondary classrooms. Cybersecurity classes have historically started with the “fundamentals”: networking, operating systems, and cryptography. With this approach, students spend the first few years reading textbooks and listening to lectures that discuss deeply technical, yet disjointed concepts. Without scaffolding upon which they can apply and retain these skills, students forget what they’ve studied and/or completely lose interest in the field before they ever have a chance to see the more fun and interesting parts of cyber. 
+Traditional cybersecurity training is flawed, especially formal cybersecurity education that takes place in K-12 and post-secondary classrooms. Cybersecurity classes have historically started with the *“fundamentals”*: networking, operating systems, and cryptography. With this approach, students spend the first few years reading textbooks and listening to lectures that discuss deeply technical, yet disjointed concepts. Without scaffolding upon which they can apply and retain these skills, students forget what they’ve studied and/or completely lose interest in the field before they ever have a chance to see the more fun and interesting parts of cyber. 
 
 KC7 challenges this traditional approach. We’ve redefined “fundamentals” not as disparate technical skills, but as highly transferable, cross-disciplinary skills that help students learn how to think, reason, and communicate. With KC7, students begin their cybersecurity learning journey by building and reinforcing skills in critical thinking, teamwork, written and verbal communication, and application of geopolitical context. 
 
