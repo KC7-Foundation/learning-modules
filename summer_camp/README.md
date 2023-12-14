@@ -125,6 +125,7 @@ Students used multiple investigative techniques to generate leads on their case.
 *Source: Students used KQL and ADX to extract evidence from data and answered questions pertaining to the timeline and victims.*
 
 <img width="725" alt="Screenshot 2023-12-14 at 5 14 53 PM" src="https://github.com/KC7-Foundation/learning-modules/assets/9474932/66e86342-c344-496a-a2c1-9bac04c480fb">
+
 *Source: Students created visuals like this poster to help present their technical findings to a wider audience.*
 
 ### Outcomes
