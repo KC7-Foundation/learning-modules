@@ -74,3 +74,7 @@ The cybersecurity industry needs diverse talents and perspectives. Unconventiona
 People that paint a pessimistic picture of the cybersecurity job market often overlook the success stories of those like myself who took unconventional paths. While the journey to a cybersecurity career is challenging, it’s not impossible. Platforms like KC7 provide an alternative hands-on approach to learning that can fast-track your journey into this field. It gave me a competitive edge by demonstrating my immediate job-readiness to potential employers.
 
 Don’t be discouraged by cynics. If you have a passion for cybersecurity and are willing to put in the effort, you can succeed. My journey from watch repair to cybersecurity is proof that with the right mindset, you can break into this industry too.
+
+---
+
+**By [Jibby Saetang](https://www.linkedin.com/in/tawon-saetang/)**
